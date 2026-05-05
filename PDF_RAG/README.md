@@ -3,20 +3,17 @@
 IBK 증권보고서(삼성전자/SK하이닉스)를 활용한 실전 RAG 파이프라인 강의 교재입니다.
 IBK 증권보고서 확인 가능 사이트 (https://m.ibks.com/iko/IKO010201.do)
 
-2시간 라이브 강의용으로 설계되었으며, 슬라이드(이론) + 노트북(실습) 구성입니다.
 
 ## 프로젝트 구조
 
 ```
 rag_lecture/
-├── rag_lecture_part1_f.ipynb              # Part 1~2: 데이터/평가셋 + PDF 추출 비교 + Base RAG
-├── rag_lecture_part2_f.ipynb              # Part 3~5: 하이브리드 검색 + Multi-Query + Reranking
+├── rag_lecture_part1_part2.ipynb                # Part 1~2: 데이터/평가셋 + PDF 추출 비교 + Base RAG
+├── rag_lecture_part3_part4_part5.ipynb          # Part 3~5: 하이브리드 검색 + Multi-Query + Reranking
 ├── IBK 증권보고서_삼성전자_SK하이닉스.pdf     # 실험 데이터 (26페이지)
 ├── PDF 파일 기반 RAG 고급 기법.pdf          # 강의 슬라이드 (8장)
-├── PDF 파일 기반 RAG 고급 기법.pptx         # 강의 슬라이드 원본
 ├── pyproject.toml                         # Poetry 의존성 정의
 ├── poetry.lock                            # Poetry 잠금 파일
-├── requirements.txt                       # pip 의존성 정의
 └── .gitignore
 ```
 
@@ -110,10 +107,10 @@ python -m ipykernel install --user --name rag-lecture --display-name "RAG Lectur
 
 ### 환경 변수
 
-`.env` 파일에 OpenAI API 키를 설정합니다:
+`.env` 파일에 hugging face token 키를 설정:
 
 ```
-OPENAI_API_KEY=sk-...
+HF_TOKEN=...
 ```
 
 ## 실행 순서
