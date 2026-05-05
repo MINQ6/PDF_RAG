@@ -1,0 +1,16 @@
+.env
+*.env
+**/.env
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+extracted_chunk_splits.pkl
+*.pkl
+
+PDF_RAG/IBK_증권보고서_삼성전자_SK하이닉스.pdf
+PDF_RAG/PDF 파일 기반 RAG 고급 기법.pdf
+
+.DS_Store
+.codex
